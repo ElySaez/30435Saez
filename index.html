@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30435 Elisabeth Sáez</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="title">Calculadora de notas</h2>
+    </div>
+
+
+
+    <div class="container">
+        <table id="table" class="table table-striped">
+            <tr>
+                <th>Nota</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container mb-3">
+        <div class="input-group">
+            <input class="form-control" type="number" name="nota" id="nota">
+            <button class="btn btn-success" type="button" id="agregar" onclick="agregarFila('table', 'nota')">+</button>
+            <button class="btn btn-danger" type="button" id="quitar" onclick="quitarFila('table')">-</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="clearfix ">
+            <button class="btn btn-primary float-end" type="button" id="promedio"
+                onclick="promedioNotas('table')">Calcular</button>
+        </div>
+        <h4 id="promVal">Promedio: </h4>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+
+</html>
