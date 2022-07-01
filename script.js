@@ -38,7 +38,7 @@ function promedioNotas(tableID) {
     }
 
     /*
-        Se inicia en 1, dado que la primera fila(row) de la tabla es el enbezado 'Nota'.
+        Se inicia en 1, dado que la primera fila(row) de la tabla es el encabezado 'Nota'.
         En cada iteracion se suman las notas de cada fila con la anterior
     */
     let sumNotas = 0;
@@ -51,7 +51,7 @@ function promedioNotas(tableID) {
 
     /*
         Se calcula la suma total de las notas.
-        El total de notas ingresadas se le resta 1, dado que la primera fila es el enbezado 'Nota' de la tabla.
+        El total de notas ingresadas se le resta 1, dado que la primera fila es el encabezado 'Nota' de la tabla.
         Se captura el elemento 'p' del HTML (promVal) y se agrega el valor del proemdio de notas.
     */
     let promedio = sumNotas / (rowCount - 1);
